@@ -1,0 +1,9 @@
+.ik-avatar { 
+    width: 100%;
+    height: inherit;
+    background-image: url(./images/5.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+}

@@ -1,0 +1,8 @@
+.ik-author-image1 {
+    width: 100%;
+    background-image: url(./images/1.jpg);
+    background-repeat:no-repeat;
+    background-position: top;
+    align-self:stretch;
+    height: 100%;
+}

@@ -1,0 +1,55 @@
+.ik-skills {
+    width:100%;
+    padding: 40px 30px 40px 40px;
+    background-color: #E4AD59;
+    color: white;
+    
+}
+.ik-skills__success {
+    width: 100%;
+    position: relative;
+    color: black;
+}
+.ik-skills__profname {
+
+}
+.ik-skills__persent {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    
+}
+.ik-skills__scale {
+width: 100%;
+display: flex;
+}
+
+.ik-skills__done {
+    height: 3px;
+    background-color: black;
+}
+.ik-skills__notdone {
+    
+    height: 3px;
+    background-color: white;
+}
+.ik-skills__done--90 {
+    width: 90%;
+}
+.ik-skills__notdone--10 {
+    width: 10%;
+}
+
+.ik-skills__done--70 {
+    width: 70%;
+}
+.ik-skills__notdone--30 {
+    width: 30%;
+}
+.ik-skills__done--80 {
+    width: 80%;
+}
+.ik-skills__notdone--20 {
+    width: 20%;
+}

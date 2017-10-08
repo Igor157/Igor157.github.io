@@ -1,0 +1,76 @@
+@media(max-width: 1220px) {
+    .ik-main-page__article {
+        width: 100%;
+    }
+    .ik-main-page__author-image1 {
+        width:50%;
+    }
+    .ik-main-page__skills {
+        width:50%;
+    }
+    .ik-main-page__portfolio {
+        width: 50%;
+    }
+    .ik-main-page__portfolio--strategy {
+        width: 100%;
+    }
+    .ik-main-page__message-form {
+        width: 100%;
+    }
+    .ik-main-page__author-image4 {
+        width: 50%;
+    }
+    .ik-main-page__visitcard {
+        width: 50%;
+    }
+    .ik-nav__button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .ik-start {
+        padding: 0;
+        margin: auto;
+    }
+    .ik-nav {
+        padding-left: 40px;
+
+    }
+    .ik-start__greeting {
+        padding-left: 40px;
+        padding-right: 20px;
+        
+    }
+    .ik-footer {
+        height: 300px;
+        padding-top: 40px;
+    }
+    
+}
+@media(max-width: 768px) {
+    .ik-flex-box {
+        width: 100%;
+    }
+    .ik-main-page__avatar, .ik-main-page__author-image1, .ik-main-page__author-image2, .ik-main-page__author-image3 {
+        min-height: 300px;
+    }
+    .ik-main-page__author-image4 {
+        min-height: 380px;
+    }
+    .ik-footer {
+        height: 200px;
+        padding-top: 70px;
+    }
+    .ik-main-page__start {
+        order: 1;
+    }
+    .ik-start__greeting {
+        padding-top: 50px;
+    }
+    .ik-footer__copyright {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+}
+
+
