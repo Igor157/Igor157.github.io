@@ -1,0 +1,30 @@
+.ik-info {
+    padding: 20px 20px 20px 40px;
+    width: 100%;
+    color:white; 
+}
+.ik-info__text--dates {
+    color: black;
+    opacity: 0.5;
+    font-size: .7em;
+}
+.ik-info--red {
+    background-color: #E9714C;
+}
+.ik-info--gold {
+    background-color: #E4AE58;
+}
+.ik-info__duration {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ik-info__icon {
+   padding-top:  0.83em; 
+}
+.ik-info__about-activity {
+    margin-left: 10px;
+}
+
+.ik-info__text--dates {
+    
+}

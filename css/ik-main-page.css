@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.ik-main-page {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,21 @@
+.ik-footer {
+    height: 500px;  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color:#5d696e;
+}
+.ik-footer__copyright {
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.ik-footer__copyright--gold {
+    color: #E4AE58; 
+}
+.ik-footer__social-links {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color:#5d696e;
+}

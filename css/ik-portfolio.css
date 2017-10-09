@@ -1,0 +1,27 @@
+.ik-portfolio {
+    padding: 50px;
+    color: white;
+    width: 100%;
+}
+.ik-portfolio--gold-background {
+    background-color: #E4AE58;
+}
+.ik-portfolio--red-background {
+    background-color: #E9714C;
+}
+.ik-portfolio--black-background {
+    background-color: #161616;
+}
+.ik-portfolio--white-background {
+    background-color: white;
+    color: black;
+}
+.ik-portfolio--pixture-background {
+    background-image: url(./images/6.jpg); 
+}
+.ik-portfolio__text {
+    text-align: center;
+}
+.ik-portfolio__icon {
+    margin: auto;
+}
