@@ -1,6 +1,6 @@
 #container {
     width: 300px;
-    height: 400px;
+    height: 200px;
     background: rgba(242, 238, 255, 0.78);
 }
 
@@ -11,16 +11,16 @@
     float: left;
 }
 
-.arrow .button{
+.arrow .button {
     width: 100%;
     height: 100%;
     background: url("./asset/arrows.png");
     background-size: 200% 100%;
 }
-.arrow.left .button{
+.arrow.left .button {
     background-position: 0 -50%;
 }
-.arrow.right .button{
+.arrow.right .button {
     background-position: -100% 0;
 }
 
@@ -37,6 +37,8 @@
     height: 20%;
     background: #ff79d9;
     float: left;
+    font-size: 2em;
+    text-align: center;
 }
 
 .dates{
@@ -52,10 +54,13 @@
     text-align: center;
 
 }
-.dates .element:nth-child(7n){
+.dates .element:nth-child(7n) {
     clear: right;
 }
 
-.dates .element.inactive{
+.dates .element.inactive {
     opacity: 0.2;
+}
+.red {
+    background-color:rgb(219, 95, 95);
 }

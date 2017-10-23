@@ -2,8 +2,6 @@
 
 // OOP used
 
-
-
 function Container(container) {
     this.container = container;
     this.leftArrow = new LeftArrow();
@@ -16,14 +14,6 @@ Container.prototype.draw = function () {
     this.container.appendChild(this.current.draw());
     this.container.appendChild(this.rightArrow.draw());
     this.container.appendChild(this.datesContainer.draw(this.current.getDate()));
-}
-Container.prototype.move = function (direction) {
-    if (direction === 'left') {
-        this.container.replaceChild(this.leftArrow.action(this.current, this.datesContainer), this.container.children[3]);
-
-    } else if (direction === 'right') {
-        this.container.replaceChild(this.rightArrow.action(this.current, this.datesContainer), this.container.children[3]);
-    }
 }
 
 function Arrow() {
@@ -51,10 +41,6 @@ LeftArrow.prototype.draw = function () {
     this.arrowContainer.getElementsByClassName("button").item(0).setAttribute("move-direction", "left");
     return this.arrowContainer;
 }
-LeftArrow.prototype.action = function (current, datesContainer) {
-    current.changeMonth(-1);
-    return datesContainer.changeMonth(current.getDate());
-}
 
 function RightArrow() {
     Arrow.apply(this, arguments);
@@ -65,12 +51,6 @@ RightArrow.prototype.draw = function () {
     this.arrowContainer.classList.add("right");
     this.arrowContainer.getElementsByClassName("button").item(0).setAttribute("move-direction", "right");
     return this.arrowContainer;
-}
-RightArrow.prototype.action = function (current, datesContainer) {
-    current.changeMonth(+1);
-    console.log(current.changeMonth(+1))
-    console.log(datesContainer.changeMonth(current.getDate()))
-    return datesContainer.changeMonth(current.getDate());
 }
 
 function Current() {
@@ -83,19 +63,12 @@ Current.prototype.draw = function () {
     this.update();
     return this.currentContainer;
 }
-Current.prototype.changeMonth = function (offset) {
-    this.date.setMonth(this.date.getMonth() + offset);
-    this.update();
-}
-Current.prototype.update = function () {
-    this.currentContainer.innerHTML = this.date.toString();
-}
+
 Current.prototype.getDate = function () {
     return this.date;
 }
 
 function DatesList() {
-
 }
 DatesList.prototype.draw = function (currentDate) {
     this.container = document.createElement("div");
@@ -142,21 +115,19 @@ DatesList.prototype.drawRow = function (month, week, date) {
         var dateToDisplay = new Date(date.getFullYear(), date.getMonth(), day + (7 * week));
         dateToDisplay.setDate(dateToDisplay.getDate() - offset);
         element.innerHTML = dateToDisplay.getDate();
-
         if (month !== dateToDisplay.getMonth()) {
             element.classList.add("inactive");
         }
-
+        var dateOfNow = new Date;
+        var dateOfNowFormat = new Date(dateOfNow.getFullYear(), dateOfNow.getMonth(), dateOfNow.getDate());
+        if (dateToDisplay.toString() === dateOfNowFormat.toString()) {
+            element.classList.add("red");
+        }
         this.container.appendChild(element);
         day++;
     }
 }
-DatesList.prototype.changeMonth = function (offset) {
-    return this.draw(offset);
-}
 
-var datePicker = new Container(document.getElementById("container"));
-datePicker.draw();
 
 
 
