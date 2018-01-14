@@ -65,8 +65,8 @@ body, html {
     flex-direction: column;
 } 
 .ik-currency-page__favorite-currencies {
-    min-width:80%;
-    min-height: 80%;
+    width:80%;
+    height: 80%;
     margin:auto;
     margin-bottom: 40px;
 }
@@ -223,6 +223,7 @@ input:read-only {
     padding: 30px;
     border: 2px solid #ddd;
     background-color: white;
+    height:80%;
 }
 .ik-currency-tabs {
     max-width: 95%;
@@ -257,13 +258,14 @@ input:read-only {
     border: 2px solid #ddd;
     background-color: white;
 }.ik-currency-dynamic-for-dates {
-
+    height: 90%;
 }
 .ik-currency-dynamic-for-dates__date-input {
     display: flex;
     justify-content: space-between;
     color: white;
     padding-bottom:30px;
+    
 }
 .ik-currency-dynamic-for-dates__date-picker {
     display: inline-block;
@@ -852,5 +854,6 @@ input:read-only {
     border: 2px solid #ddd;
     background-color: rgb(48, 136, 84);
     border-radius: 3px;
-    width: 100px
+    width: 100px;
+    cursor: pointer;
 }
