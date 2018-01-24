@@ -1,134 +1,167 @@
-body, html { 
-    width: 100%;
-    height: 100%;
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
     padding: 0;
-    margin:0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
-.ik-page {
-    min-width: 100%;
-    min-height: 100%;
-    display: flex;
-    align-items:stretch;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+body {
+    line-height: 1.2;
+}
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html, body {
+    height: 100%;
+}
+
 .ik-currency-page {
-    background-color: rgb(88, 82, 82);  
+    height: 100%;
+    max-width: 1600px;
     display: flex;
     flex-wrap: wrap;
-    min-width: 100%;
-    min-height: 100%;
+    align-content:flex-start;
+    padding: 3%;
+    background-color: rgb(88, 82, 82);
 }
+
 .ik-currency-page__search {
     width: 30%;
-    display: flex;
-    padding-left: 30px;
-    padding-top: 20px;
     box-sizing: border-box;
 }
+
 .ik-currency-page__search--unvizible {
-    visibility: hidden; 
+    visibility: hidden;
 }
+
 .ik-currency-page__navigation {
+    margin-bottom: 5%;
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding-left: 200px;
-    padding-right: 50px;
-    padding-top: 20px;
+    padding-left: 20%;
     box-sizing: border-box;
 }
+
 .ik-currency-page__available-currencies {
     width: 30%;
-    height: 100%;
-    margin: 30px;
-    margin-bottom: 40px;
+    max-height: 78vh;
     box-sizing: border-box;
-    margin-top: 20px;
-    max-height: 85vh;
-    min-height: 85vh;  
 }
 
 .ik-currency-page__info-place {
-    margin-top: 20px;
     width: 60%;
-    max-height: 85vh;
 }
 
 .ik-currency-page__currency-calculator {
-    margin-top: 20px;
     width: 60%;
-    max-height: 85vh;
 }
+
 .ik-currency-page__about {
     margin: auto;
-    margin-bottom: 400px;
-    display:flex;
+    margin-top: 10%;
+    display: flex;
     flex-direction: column;
-} 
+}
+
 .ik-currency-page__favorite-currencies {
-    width:80%;
-    height: 80%;
-    margin:auto;
-    margin-bottom: 40px;
+    width: 80%;
+    margin: auto;
 }
+
 .ik-currency-page__saveable-currency-dynamic {
-    margin-top: 20px;
     width: 60%;
-    max-height: 85vh;
-}
-.ik-available-currencies {
+}.ik-available-currencies {
     border: 2px solid #ddd;
     border-radius: 5px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     color: rgb(74, 74, 228);
 }
+
 .ik-available-currencies__day-progress--red {
     background-color: rgb(151, 21, 21);
 }
+
 .ik-available-currencies__day-progress--green {
     background-color: rgb(30, 126, 30);
 }
+
 .ik-available-currencies__row {
     display: flex;
-    justify-content: space-around;   
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 2%;
     cursor: pointer;
 }
+
 .ik-available-currencies__row:hover {
     background-color: rgb(74, 74, 228);
-    color:white;
+    color: white;
 }
+
 .ik-available-currencies__row--selected {
     background-color: rgb(74, 74, 228);
-    color:white;    
+    color: white;
 }
+
+.ik-available-currencies__icon {
+    width: 10%;
+}
+
 .ik-available-currencies__abr {
     font-weight: bold;
-    min-width: 75px;
+    width: 30%;
 }
+
 .ik-available-currencies__rate {
-    min-width: 75px;
+    width: 30%;
 }
+
 .ik-available-currencies__day-progress {
     border: 2px solid white;
-    min-width: 75px;
+    width: 20%;
     border-radius: 5px;
+    cursor: pointer;
 }.ik-search {
-    height: 45px;    
 }
+.ik-search__form {
+    display: flex;
+}
+
 .ik-search__search-place {
-width:70%;
-color: white;
-background-color: rgb(74, 74, 228);
-border: 2px solid #ddd;
-border-radius: 10px 0 0 10px;
+    padding: 2%;
+    min-width: 70%;
+    color: white;
+    background-color: rgb(74, 74, 228);
+    border: 2px solid #ddd;
+    border-radius: 10px 0 0 10px;
 }
+
 .ik-search__search-button {
-    float: right;
+    padding: 2%;
     color: white;
     background-color: rgb(228, 192, 74);
     border: 2px solid white;
     border-radius: 0 10px 10px 0;
+    user-select: none;
 }.ik-currency-calculator {
 
 }
@@ -138,15 +171,15 @@ border-radius: 10px 0 0 10px;
 }
 .ik-currency-calculator__currency-graph {
     margin-top: 40px;
-}
-.ik-converter-container {
+}.ik-converter-container {
     color: white;
-}
-.ik-converter-container__converter-input {
-    padding-top:20px;
+    padding-bottom: 5%;
 }
 
-.ik-converter-input {
+.ik-converter-container__converter-input {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}.ik-converter-input {
 
 }
 .ik-converter-input__label{
@@ -182,37 +215,32 @@ input:read-only {
     padding-top: 20px;
     margin: auto;
 }#myChart{
-    max-width:80%;
-    max-height: 80%;
+    /* max-width:80%;
+    max-height: 80%; */
     
-}
-.ik-about {
-    color:rgb(74, 74, 228);
+}.ik-about {
+    color: rgb(74, 74, 228);
     font-size: 1.6em;
 }
-.ik-about__author {
 
-}
-.ik-about__link {
+.ik-about__author {}
 
-}.ik-navigation {
-    color: white;
-    height: 50px;
+.ik-about__link {}.ik-navigation {}
 
-}
 .ik-navigation__button {
-    color:white;
+    color: white;
 }
+
 .ik-navigation__button--selected {
     color: rgb(74, 74, 228);
 }
+
 .ik-navigation__counter {
-    color:red;
+    color: red;
     text-decoration: none;
-    float:right;
-    margin-left:10px;
-}
-.ik-favorite-currencies {
+    float: right;
+    margin-left: 10px;
+}.ik-favorite-currencies {
 }
 .ik-favorite-currencies__currency-tabs {
     display: flex;
@@ -220,10 +248,9 @@ input:read-only {
     align-content:flex-start;
 }
 .ik-favorite-currencies__currency-info {
-    padding: 30px;
+    padding: 3%;
     border: 2px solid #ddd;
     background-color: white;
-    height:80%;
 }
 .ik-currency-tabs {
     max-width: 95%;
@@ -250,28 +277,32 @@ input:read-only {
 .ik-currency-tab__close {
 
 }
-
-.ik-favorite-currencies-info__info-table {
+.ik-favorite-currencies-info {
+    height: 70vh;
 }
+
+.ik-favorite-currencies-info__info-table {}
+
 .ik-favorite-currencies__dynamic-for-dates {
-    padding: 30px;
+    padding: 3%;
     border: 2px solid #ddd;
     background-color: white;
 }.ik-currency-dynamic-for-dates {
-    height: 90%;
+    height: 80%;
 }
 .ik-currency-dynamic-for-dates__date-input {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
-    padding-bottom:30px;
+    padding-bottom:10%;
+    box-sizing: border-box;
+    min-height: 30%;
     
 }
 .ik-currency-dynamic-for-dates__date-picker {
     display: inline-block;
 }
 .ik-currency-dynamic-for-dates__graph {
-    
 }.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
 .react-datepicker__month-read-view--down-arrow {
   margin-left: -8px;
@@ -845,15 +876,17 @@ input:read-only {
 
 }
 .ik-saveable-currency-dynamic__button {
-
+    margin-left: 80%;
+    padding: 1%;
 }
 .ik-saveable-currency-dynamic__currency-dynamic-for-dates {
     padding-top:40px;
 }.ik-save-to-favorite-button {
-    margin-left: 80%;
-    border: 2px solid #ddd;
+    border: 2px solid white;
     background-color: rgb(48, 136, 84);
     border-radius: 3px;
-    width: 100px;
+    color:white;
+    min-width: 20%;
     cursor: pointer;
+    font-weight: bold;
 }
