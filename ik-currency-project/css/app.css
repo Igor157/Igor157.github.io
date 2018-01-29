@@ -364,7 +364,7 @@ input:read-only {
     }
 }
 .ik-favorite-currencies-info {
-    height: 73vh;
+    /* height: 73vh; */
 }
 
 .ik-favorite-currencies-info__info-table {}
@@ -373,6 +373,12 @@ input:read-only {
     padding: 3%;
     border: 2px solid #ddd;
     background-color: white;
+}
+
+@media (max-width: 600px){
+    .ik-favorite-currencies-info {
+        height: 500px;
+    }
 }.ik-currency-dynamic-for-dates {
     height: 80%;
 }
@@ -389,6 +395,12 @@ input:read-only {
     display: inline-block;
 }
 .ik-currency-dynamic-for-dates__graph {
+    height: 30vh;
+}
+@media (max-width: 600px){
+    .ik-currency-dynamic-for-dates__date-input {
+        display: block;        
+    }
 }.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
 .react-datepicker__month-read-view--down-arrow {
   margin-left: -8px;
