@@ -33,16 +33,20 @@ html, body {
 
 #ik-page {
     height: 100%;
+    width:100%;
+    background-color: rgb(88, 82, 82);
 }
 
 .ik-currency-page {
     min-height: 100%;
+    width:100%;
     max-width: 1600px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     padding: 3%;
     background-color: rgb(88, 82, 82);
+
 }
 
 .ik-currency-page__search {
@@ -247,6 +251,7 @@ html, body {
 .ik-converter-container__converter-input {
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-left: 10%;
 }.ik-converter-input {
 
 }
@@ -359,7 +364,7 @@ input:read-only {
     }
 }
 .ik-favorite-currencies-info {
-    height: 70vh;
+    height: 73vh;
 }
 
 .ik-favorite-currencies-info__info-table {}
