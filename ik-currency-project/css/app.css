@@ -243,6 +243,7 @@ html, body {
 }
 .ik-currency-calculator__currency-graph {
     margin-top: 40px;
+    height: 30vh;
 }.ik-converter-container {
     color: white;
     padding-bottom: 5%;
